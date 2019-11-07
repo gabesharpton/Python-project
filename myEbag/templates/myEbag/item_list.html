@@ -1,0 +1,12 @@
+{% extends 'myEbag/base.html' %}
+{% block content %}
+<h1>Items <a href="">(+)</a></h1>
+<ul>
+    {% for item in items %}
+        <li>
+            <a href="{% url 'item_detail' pk=item.id %}">{{ item.name }}</a>
+        </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'myEbag/base.html' %}
+
+{% block content %}
+<h2>{{ items.name }} <a href="">(edit)</a> </h2>
+<h2>{{ items.description }}</h2>
+<img src="{{ items.photo_url }}" alt="" class="item_photo" />
+<a href='/'>Back</a>
+{% endblock %}
