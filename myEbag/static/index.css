@@ -1,0 +1,10 @@
+body {
+  background-color: #02b087;
+  font: black;
+}
+h1 {
+  font-size: 30px;
+}
+a:visited {
+  font: black;
+}
