@@ -1,6 +1,7 @@
 {% extends 'myEbag/base.html' %}
 {% block content %}
-<h1>Items <a href="">(+)</a></h1>
+<p>Welcome to E-bags, a place where you can post your things. I definetly spent a lot of time debugging on this project so it did not turn out as complete as I hoped but on the plus side it made me feel quite a bit more comfortable with Django and Python.</p>
+<h1>Items <a href="{% url 'item_create' %}">(+)</a></h1>
 <ul>
     {% for item in items %}
         <li>
